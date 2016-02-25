@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue_very_light" >
+
+    <include 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        layout="@layout/layout_common_title"/>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_student_class"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray" />
+
+    <RadioGroup
+        android:id="@+id/rg_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_student_class"
+            android:paddingLeft="0dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_student_grade_image"
+            android:gravity="center"
+            android:text="@string/label_follow"
+            android:textColor="@drawable/selector_student_text"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_student_explore"
+            android:paddingLeft="0dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_student_explore_image"
+            android:gravity="center"
+            android:text="@string/label_explore"
+            android:textColor="@drawable/selector_student_text"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_student_me"
+            android:paddingLeft="0dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_student_me_image"
+            android:gravity="center"
+            android:text="@string/label_me"
+            android:textColor="@drawable/selector_student_text"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+</LinearLayout>

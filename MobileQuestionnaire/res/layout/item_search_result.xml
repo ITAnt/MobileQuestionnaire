@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        android:id="@+id/tv_monitor_name"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/edittext_height"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:background="@drawable/shape_search"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@null" />
+
+    <RelativeLayout
+        android:id="@+id/rl_favorite"
+        android:layout_width="@dimen/edittext_height"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_search_dark"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/iv_favorite"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/add" />
+    </RelativeLayout>
+
+</LinearLayout>

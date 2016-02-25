@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue_very_light" >
+    
+    <com.onion.paper.view.CustomedActionBar
+        xmlns:ab="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cab_member_list"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        ab:rightIcon="@drawable/refresh"
+        ab:title="@string/label_questionnaire_result_list"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:background="@drawable/selector_bg_retry" >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_operate_desc"
+            android:textColor="@color/grey_text"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    
+    <ListView
+        android:id="@+id/ptrlv_excel_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+</LinearLayout>

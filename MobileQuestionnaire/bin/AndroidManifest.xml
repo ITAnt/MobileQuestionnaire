@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.onion.paper"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <!-- <uses-permission android:name="android.permission."/> -->
+    
+
+    <application
+        android:name="com.onion.paper.QuestionnaireApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        
+        <activity
+            android:name="com.onion.paper.activity.SplashActivity"
+            android:configChanges="screenSize|keyboardHidden|navigation|orientation|"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 登录界面 -->
+        <activity
+            android:name="com.onion.paper.activity.LoginActivity"
+            android:configChanges="screenSize|keyboardHidden|navigation|orientation|"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysVisible" >
+        </activity>
+
+        <!-- 注册界面 -->
+        <activity
+            android:name="com.onion.paper.activity.RegisterActivity"
+            android:configChanges="screenSize|keyboardHidden|navigation|orientation|"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysVisible" >
+        </activity>
+
+        <!-- 班级界面 -->
+        <activity
+            android:name="com.onion.paper.activity.monitor.MonitorActivity"
+            android:configChanges="screenSize|keyboardHidden|navigation|orientation|"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+        </activity>
+
+        <!-- 班级管理问卷界面 -->
+        <activity
+            android:name="com.onion.paper.activity.monitor.OperateQuestionnairActivity"
+            android:configChanges="screenSize|keyboardHidden|navigation|orientation|"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+        </activity>
+
+        <!-- 增加问卷界面 -->
+        <activity
+            android:name="com.onion.paper.activity.monitor.AddQuestionnaireActivity"
+            android:configChanges="screenSize|keyboardHidden|navigation|orientation|"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+        </activity>
+
+        <!-- 成员列表界面 -->
+        <activity
+            android:name="com.onion.paper.activity.monitor.FansListActivity"
+            android:configChanges="screenSize|keyboardHidden|navigation|orientation|"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+        </activity>
+
+        <!-- ==========================================学生界面========================================== -->
+        <activity
+            android:name="com.onion.paper.activity.student.StudentActivity"
+            android:configChanges="screenSize|keyboardHidden|navigation|orientation|"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <!-- 问卷列表界面 -->
+        <activity
+            android:name="com.onion.paper.activity.student.QuestionnaireListActivity"
+            android:configChanges="screenSize|keyboardHidden|navigation|orientation|"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+        </activity>
+
+        <!-- 学生问卷详情界面 -->
+        <activity
+            android:name="com.onion.paper.activity.student.QuestionnaireDetailActivity"
+            android:configChanges="screenSize|keyboardHidden|navigation|orientation|"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+        </activity>
+
+        <!-- 搜索问卷界面 -->
+        <activity
+            android:name="com.onion.paper.activity.student.SearchActivity"
+            android:configChanges="screenSize|keyboardHidden|navigation|orientation|"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysVisible" >
+        </activity>
+
+        <!-- 搜索问卷界面 -->
+        <activity
+            android:name="com.onion.paper.activity.student.ErweimaActivity"
+            android:configChanges="screenSize|keyboardHidden|navigation|orientation|"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+        </activity>
+
+        <!-- 扫二维码界面 -->
+        <activity
+            android:name="com.zxing.activity.CaptureActivity"
+            android:configChanges="screenSize|keyboardHidden|navigation|orientation|"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+        </activity>
+
+        <!-- 关于界面 -->
+        <activity
+            android:name="com.onion.paper.activity.AboutActivity"
+            android:configChanges="screenSize|keyboardHidden|navigation|orientation|"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" />
+
+        <!-- 设置界面 -->
+        <activity
+            android:name="com.onion.paper.activity.SettingActivity"
+            android:configChanges="screenSize|keyboardHidden|navigation|orientation|"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" />
+        
+        <!-- 设置界面 -->
+        <activity
+            android:name="com.onion.paper.activity.monitor.ExcelListActivity"
+            android:configChanges="screenSize|keyboardHidden|navigation|orientation|"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" />
+
+        <!-- 友盟 -->
+        <!-- 友盟 -->
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <meta-data android:value="56042003e0f55a3131003afa" android:name="UMENG_APPKEY"></meta-data>
+		<meta-data android:value="tcsll" android:name="UMENG_CHANNEL"/>
+        
+		
+		<!-- 腾讯相关 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1104906904" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 腾讯 -->
+        <!-- <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1104804629" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> -->
+    </application>
+    
+</manifest>

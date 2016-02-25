@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.onion.paper.view.CustomedActionBar
+            xmlns:ab="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cab_erweima"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_height"
+            android:layout_marginBottom="20dp"
+            ab:rightIcon="@drawable/share"
+            ab:title="@string/label_captcha_card" />
+    
+    <ImageView
+        android:id="@+id/iv_erweima"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:scaleType="fitXY" />
+    
+    <TextView 
+        android:layout_below="@+id/iv_erweima"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/label_scand_to_find_me"/>
+
+</RelativeLayout>

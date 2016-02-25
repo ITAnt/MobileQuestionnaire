@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_very_light"
+    android:orientation="vertical" >
+
+    <com.onion.paper.view.CustomedActionBar
+        xmlns:ab="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ab_register"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        ab:title="@string/label_register_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_edittext_radius"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:digits="1234567890"
+                android:hint="@string/label_register_phone"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textSize="17sp" />
+
+            <!-- <Button
+                android:id="@+id/btn_get_chaptcha"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_button_get_captcha"
+                android:text="获取验证码"
+                android:textColor="@color/white"
+                android:textSize="10sp" /> -->
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- <EditText
+        android:id="@+id/et_chaptcha"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@drawable/shape_edittext_radius"
+        android:hint="验证码"
+        android:padding="5dp"
+        android:textSize="17sp" /> -->
+    
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@drawable/shape_edittext_radius"
+        android:hint="@string/label_register_name"
+        android:padding="5dp"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@drawable/shape_edittext_radius"
+        android:hint="@string/label_register_password"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@drawable/selector_button_radius"
+        android:enabled="false"
+        android:minHeight="0dp"
+        android:text="@string/label_register_button"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>
