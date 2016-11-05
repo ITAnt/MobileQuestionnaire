@@ -3,7 +3,9 @@ package com.onion.paper.activity.student;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -18,6 +20,7 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.onion.paper.R;
+import com.onion.paper.activity.LoginActivity;
 import com.onion.paper.adapter.PagerAdapter;
 import com.onion.paper.fragment.StudentExploreFragment;
 import com.onion.paper.fragment.StudentGradeFragment;
@@ -60,8 +63,41 @@ public class StudentActivity extends FragmentActivity implements OnPageChangeLis
 		//overridePendingTransition(R.anim.slide_in_right, anim.fade_out);
 		setContentView(R.layout.activity_student);
 		
+		initPermissin();
+		
 		initComponent();
 		UmengUpdateAgent.update(this);
+	}
+	
+	private static final int REQUEST_EXTERNAL_STORAGE = 1;
+    private static String[] PERMISSIONS_STORAGE = {
+            Manifest.permission.READ_EXTERNAL_STORAGE,
+            Manifest.permission.WRITE_EXTERNAL_STORAGE,
+            Manifest.permission.ACCESS_NETWORK_STATE,
+            Manifest.permission.ACCESS_WIFI_STATE,
+            Manifest.permission.INTERNET,
+            Manifest.permission.VIBRATE,
+            Manifest.permission.CAMERA,
+            Manifest.permission.MOUNT_UNMOUNT_FILESYSTEMS,
+            Manifest.permission.RECEIVE_BOOT_COMPLETED,
+            Manifest.permission.WAKE_LOCK,
+            Manifest.permission.RECORD_AUDIO,
+            Manifest.permission.READ_PHONE_STATE,
+            Manifest.permission.READ_LOGS
+    };
+    /**
+     * 初始化权限
+     */
+	private void initPermissin() {
+		int permission = StudentActivity.this.checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE);
+
+        if (permission != PackageManager.PERMISSION_GRANTED) {
+            // We don't have permission so prompt the user
+        	StudentActivity.this.requestPermissions(
+                    PERMISSIONS_STORAGE,
+                    REQUEST_EXTERNAL_STORAGE
+            );
+        }
 	}
 	
 	@Override

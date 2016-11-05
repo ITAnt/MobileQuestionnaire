@@ -4,9 +4,11 @@ import java.util.List;
 
 import org.json.JSONObject;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -385,6 +387,39 @@ public class LoginActivity extends Activity implements OnClickListener, TextWatc
 		
 		tv_register = (TextView) findViewById(R.id.tv_register);
 		tv_register.setOnClickListener(this);
+		
+		initPermissin();
+	}
+	
+	private static final int REQUEST_EXTERNAL_STORAGE = 1;
+    private static String[] PERMISSIONS_STORAGE = {
+            Manifest.permission.READ_EXTERNAL_STORAGE,
+            Manifest.permission.WRITE_EXTERNAL_STORAGE,
+            Manifest.permission.ACCESS_NETWORK_STATE,
+            Manifest.permission.ACCESS_WIFI_STATE,
+            Manifest.permission.INTERNET,
+            Manifest.permission.VIBRATE,
+            Manifest.permission.CAMERA,
+            Manifest.permission.MOUNT_UNMOUNT_FILESYSTEMS,
+            Manifest.permission.RECEIVE_BOOT_COMPLETED,
+            Manifest.permission.WAKE_LOCK,
+            Manifest.permission.RECORD_AUDIO,
+            Manifest.permission.READ_PHONE_STATE,
+            Manifest.permission.READ_LOGS
+    };
+    /**
+     * 初始化权限
+     */
+	private void initPermissin() {
+		int permission = LoginActivity.this.checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE);
+
+        if (permission != PackageManager.PERMISSION_GRANTED) {
+            // We don't have permission so prompt the user
+        	LoginActivity.this.requestPermissions(
+                    PERMISSIONS_STORAGE,
+                    REQUEST_EXTERNAL_STORAGE
+            );
+        }
 	}
 
 	@Override

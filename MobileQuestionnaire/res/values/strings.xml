@@ -28,7 +28,7 @@
     <string name="label_delete_questionnaire_desc">Are you going to delete this questionnaire?</string>
     <string name="label_exit_questionnaire_title">Leave Questionnaire</string>
     <string name="label_exit_questionnaire__desc">Are you going to leave?</string>
-    <string name="label_share_title">Share Excel File</string>
+    <string name="label_share_title">Share Captcha</string>
     <string name="msg_file_not_exists">File not exists.</string>
     <string name="label_delete_local_questionnaire_desc">Are you going to delete local questionnaire result?</string>
     <string name="label_pull">Pull to refresh</string>
