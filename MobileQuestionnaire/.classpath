@@ -10,6 +10,7 @@
 	<classpathentry kind="lib" path="libs/open_sdk_r5276.jar"/>
 	<classpathentry kind="lib" path="libs/poi-3.7.jar"/>
 	<classpathentry kind="lib" path="libs/zxing.jar"/>
+	<classpathentry kind="lib" path="libs/android-support-v4.jar"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
 	<classpathentry kind="output" path="bin/classes"/>

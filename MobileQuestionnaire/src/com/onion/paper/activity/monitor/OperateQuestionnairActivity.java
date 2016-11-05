@@ -2,9 +2,11 @@ package com.onion.paper.activity.monitor;
 
 import java.io.File;
 
+import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -39,6 +41,13 @@ import com.umeng.analytics.MobclickAgent;
  */
 public class OperateQuestionnairActivity extends Activity implements
 		OnClickListener {
+	private static final int REQUEST_EXTERNAL_STORAGE = 1;
+    private static String[] PERMISSIONS_STORAGE = {
+            Manifest.permission.READ_EXTERNAL_STORAGE,
+            Manifest.permission.WRITE_EXTERNAL_STORAGE
+    };
+	
+	
 	private CustomedActionBar cab_operate_questionnaire;
 	private LinearLayout ll_delete_questionnaire;
 	private LinearLayout ll_export;
@@ -188,6 +197,17 @@ public class OperateQuestionnairActivity extends Activity implements
 
 	@Override
 	public void onClick(View v) {
+		
+		int permission = OperateQuestionnairActivity.this.checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE);
+
+        if (permission != PackageManager.PERMISSION_GRANTED) {
+            // We don't have permission so prompt the user
+        	OperateQuestionnairActivity.this.requestPermissions(
+                    PERMISSIONS_STORAGE,
+                    REQUEST_EXTERNAL_STORAGE
+            );
+        }
+		
 		// TODO Auto-generated method stub
 		switch (v.getId()) {
 		case R.id.ll_export:

@@ -28,7 +28,7 @@
     <string name="label_delete_questionnaire_desc">客官，真的要删除该问题？</string>
     <string name="label_exit_questionnaire_title">离开问卷</string>
     <string name="label_exit_questionnaire__desc">客官，您的问卷尚未提交，真的要离开么？</string>
-    <string name="label_share_title">二维码分享</string>
+    <string name="label_share_title">分享文件到</string>
     <string name="msg_file_not_exists">该文件不存在</string>
     <string name="label_delete_local_questionnaire_desc">客官，真的要删除该本地问卷结果？</string>
     <string name="label_pull">下拉刷新</string>

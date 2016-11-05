@@ -474,28 +474,28 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static int vpi__light_theme=0x7f090015;
     }
     public static final class dimen {
-        public static int default_circle_indicator_radius=0x7f050007;
-        public static int default_circle_indicator_stroke_width=0x7f050008;
-        public static int default_line_indicator_gap_width=0x7f05000a;
-        public static int default_line_indicator_line_width=0x7f050009;
-        public static int default_line_indicator_stroke_width=0x7f05000b;
-        public static int default_title_indicator_clip_padding=0x7f05000c;
-        public static int default_title_indicator_footer_indicator_height=0x7f05000e;
-        public static int default_title_indicator_footer_indicator_underline_padding=0x7f05000f;
-        public static int default_title_indicator_footer_line_height=0x7f05000d;
-        public static int default_title_indicator_footer_padding=0x7f050010;
-        public static int default_title_indicator_text_size=0x7f050011;
-        public static int default_title_indicator_title_padding=0x7f050012;
-        public static int default_title_indicator_top_padding=0x7f050013;
-        public static int deleteHeight=0x7f050006;
+        public static int default_circle_indicator_radius=0x7f060007;
+        public static int default_circle_indicator_stroke_width=0x7f060008;
+        public static int default_line_indicator_gap_width=0x7f06000a;
+        public static int default_line_indicator_line_width=0x7f060009;
+        public static int default_line_indicator_stroke_width=0x7f06000b;
+        public static int default_title_indicator_clip_padding=0x7f06000c;
+        public static int default_title_indicator_footer_indicator_height=0x7f06000e;
+        public static int default_title_indicator_footer_indicator_underline_padding=0x7f06000f;
+        public static int default_title_indicator_footer_line_height=0x7f06000d;
+        public static int default_title_indicator_footer_padding=0x7f060010;
+        public static int default_title_indicator_text_size=0x7f060011;
+        public static int default_title_indicator_title_padding=0x7f060012;
+        public static int default_title_indicator_top_padding=0x7f060013;
+        public static int deleteHeight=0x7f060006;
         /**  swipe 
          */
-        public static int deleteWidth=0x7f050005;
-        public static int header_footer_left_right_padding=0x7f050003;
-        public static int header_footer_top_bottom_padding=0x7f050004;
-        public static int indicator_corner_radius=0x7f050001;
-        public static int indicator_internal_padding=0x7f050002;
-        public static int indicator_right_padding=0x7f050000;
+        public static int deleteWidth=0x7f060005;
+        public static int header_footer_left_right_padding=0x7f060003;
+        public static int header_footer_top_bottom_padding=0x7f060004;
+        public static int indicator_corner_radius=0x7f060001;
+        public static int indicator_internal_padding=0x7f060002;
+        public static int indicator_right_padding=0x7f060000;
     }
     public static final class drawable {
         public static int default_ptr_flip=0x7f020000;
@@ -513,28 +513,28 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static int vpi__tab_unselected_pressed_holo=0x7f02000c;
     }
     public static final class id {
-        public static int both=0x7f060003;
-        public static int bottom=0x7f06000f;
-        public static int disabled=0x7f060004;
-        public static int fl_inner=0x7f060011;
-        public static int flip=0x7f06000a;
-        public static int gridview=0x7f060000;
-        public static int manualOnly=0x7f060005;
-        public static int none=0x7f06000c;
-        public static int pullDownFromTop=0x7f060006;
-        public static int pullFromEnd=0x7f060007;
-        public static int pullFromStart=0x7f060008;
-        public static int pullUpFromBottom=0x7f060009;
-        public static int pull_to_refresh_image=0x7f060012;
-        public static int pull_to_refresh_progress=0x7f060013;
-        public static int pull_to_refresh_sub_text=0x7f060015;
-        public static int pull_to_refresh_text=0x7f060014;
-        public static int rotate=0x7f06000b;
-        public static int scrollview=0x7f060002;
-        public static int top=0x7f060010;
-        public static int triangle=0x7f06000d;
-        public static int underline=0x7f06000e;
-        public static int webview=0x7f060001;
+        public static int both=0x7f050003;
+        public static int bottom=0x7f05000f;
+        public static int disabled=0x7f050000;
+        public static int fl_inner=0x7f050011;
+        public static int flip=0x7f050008;
+        public static int gridview=0x7f050009;
+        public static int manualOnly=0x7f050004;
+        public static int none=0x7f05000c;
+        public static int pullDownFromTop=0x7f050005;
+        public static int pullFromEnd=0x7f050002;
+        public static int pullFromStart=0x7f050001;
+        public static int pullUpFromBottom=0x7f050006;
+        public static int pull_to_refresh_image=0x7f050012;
+        public static int pull_to_refresh_progress=0x7f050013;
+        public static int pull_to_refresh_sub_text=0x7f050015;
+        public static int pull_to_refresh_text=0x7f050014;
+        public static int rotate=0x7f050007;
+        public static int scrollview=0x7f05000b;
+        public static int top=0x7f050010;
+        public static int triangle=0x7f05000d;
+        public static int underline=0x7f05000e;
+        public static int webview=0x7f05000a;
     }
     public static final class integer {
         public static int default_circle_indicator_orientation=0x7f0b0000;
@@ -634,7 +634,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           resource symbol {@link android.R.attr#background}.
           @attr name android:background
         */
-        public static int CirclePageIndicator_android_background = 1;
+        public static final int CirclePageIndicator_android_background = 1;
         /**
           <p>
           @attr description
@@ -643,7 +643,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           resource symbol {@link android.R.attr#orientation}.
           @attr name android:orientation
         */
-        public static int CirclePageIndicator_android_orientation = 0;
+        public static final int CirclePageIndicator_android_orientation = 0;
         /**
           <p>
           @attr description
@@ -659,7 +659,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:centered
         */
-        public static int CirclePageIndicator_centered = 2;
+        public static final int CirclePageIndicator_centered = 2;
         /**
           <p>
           @attr description
@@ -676,7 +676,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:fillColor
         */
-        public static int CirclePageIndicator_fillColor = 4;
+        public static final int CirclePageIndicator_fillColor = 4;
         /**
           <p>
           @attr description
@@ -693,7 +693,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:pageColor
         */
-        public static int CirclePageIndicator_pageColor = 5;
+        public static final int CirclePageIndicator_pageColor = 5;
         /**
           <p>
           @attr description
@@ -711,7 +711,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:radius
         */
-        public static int CirclePageIndicator_radius = 6;
+        public static final int CirclePageIndicator_radius = 6;
         /**
           <p>
           @attr description
@@ -727,7 +727,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:snap
         */
-        public static int CirclePageIndicator_snap = 7;
+        public static final int CirclePageIndicator_snap = 7;
         /**
           <p>
           @attr description
@@ -744,7 +744,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:strokeColor
         */
-        public static int CirclePageIndicator_strokeColor = 8;
+        public static final int CirclePageIndicator_strokeColor = 8;
         /**
           <p>
           @attr description
@@ -762,7 +762,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:strokeWidth
         */
-        public static int CirclePageIndicator_strokeWidth = 3;
+        public static final int CirclePageIndicator_strokeWidth = 3;
         /** Attributes that can be used with a LinePageIndicator.
            <p>Includes the following attributes:</p>
            <table>
@@ -797,7 +797,7 @@ containing a value of this type.
           resource symbol {@link android.R.attr#background}.
           @attr name android:background
         */
-        public static int LinePageIndicator_android_background = 0;
+        public static final int LinePageIndicator_android_background = 0;
         /**
           <p>
           @attr description
@@ -813,7 +813,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:centered
         */
-        public static int LinePageIndicator_centered = 1;
+        public static final int LinePageIndicator_centered = 1;
         /**
           <p>
           @attr description
@@ -831,7 +831,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:gapWidth
         */
-        public static int LinePageIndicator_gapWidth = 6;
+        public static final int LinePageIndicator_gapWidth = 6;
         /**
           <p>
           @attr description
@@ -849,7 +849,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:lineWidth
         */
-        public static int LinePageIndicator_lineWidth = 5;
+        public static final int LinePageIndicator_lineWidth = 5;
         /**
           <p>
           @attr description
@@ -866,7 +866,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:selectedColor
         */
-        public static int LinePageIndicator_selectedColor = 2;
+        public static final int LinePageIndicator_selectedColor = 2;
         /**
           <p>
           @attr description
@@ -884,7 +884,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:strokeWidth
         */
-        public static int LinePageIndicator_strokeWidth = 3;
+        public static final int LinePageIndicator_strokeWidth = 3;
         /**
           <p>
           @attr description
@@ -901,7 +901,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:unselectedColor
         */
-        public static int LinePageIndicator_unselectedColor = 4;
+        public static final int LinePageIndicator_unselectedColor = 4;
         /** Attributes that can be used with a PullToRefresh.
            <p>Includes the following attributes:</p>
            <table>
@@ -970,7 +970,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:ptrAdapterViewBackground
         */
-        public static int PullToRefresh_ptrAdapterViewBackground = 16;
+        public static final int PullToRefresh_ptrAdapterViewBackground = 16;
         /**
           <p>
           @attr description
@@ -989,7 +989,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:ptrAnimationStyle
         */
-        public static int PullToRefresh_ptrAnimationStyle = 12;
+        public static final int PullToRefresh_ptrAnimationStyle = 12;
         /**
           <p>
           @attr description
@@ -1001,7 +1001,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:ptrDrawable
         */
-        public static int PullToRefresh_ptrDrawable = 6;
+        public static final int PullToRefresh_ptrDrawable = 6;
         /**
           <p>This symbol is the offset where the {@link com.itant.questionnaire.library.R.attr#ptrDrawableBottom}
           attribute's value can be found in the {@link #PullToRefresh} array.
@@ -1011,7 +1011,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name com.itant.questionnaire.library:ptrDrawableBottom
         */
-        public static int PullToRefresh_ptrDrawableBottom = 18;
+        public static final int PullToRefresh_ptrDrawableBottom = 18;
         /**
           <p>
           @attr description
@@ -1023,7 +1023,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:ptrDrawableEnd
         */
-        public static int PullToRefresh_ptrDrawableEnd = 8;
+        public static final int PullToRefresh_ptrDrawableEnd = 8;
         /**
           <p>
           @attr description
@@ -1035,7 +1035,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:ptrDrawableStart
         */
-        public static int PullToRefresh_ptrDrawableStart = 7;
+        public static final int PullToRefresh_ptrDrawableStart = 7;
         /**
           <p>This symbol is the offset where the {@link com.itant.questionnaire.library.R.attr#ptrDrawableTop}
           attribute's value can be found in the {@link #PullToRefresh} array.
@@ -1045,7 +1045,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           @attr name com.itant.questionnaire.library:ptrDrawableTop
         */
-        public static int PullToRefresh_ptrDrawableTop = 17;
+        public static final int PullToRefresh_ptrDrawableTop = 17;
         /**
           <p>
           @attr description
@@ -1059,7 +1059,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:ptrHeaderBackground
         */
-        public static int PullToRefresh_ptrHeaderBackground = 1;
+        public static final int PullToRefresh_ptrHeaderBackground = 1;
         /**
           <p>
           @attr description
@@ -1073,7 +1073,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:ptrHeaderSubTextColor
         */
-        public static int PullToRefresh_ptrHeaderSubTextColor = 3;
+        public static final int PullToRefresh_ptrHeaderSubTextColor = 3;
         /**
           <p>
           @attr description
@@ -1085,7 +1085,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:ptrHeaderTextAppearance
         */
-        public static int PullToRefresh_ptrHeaderTextAppearance = 10;
+        public static final int PullToRefresh_ptrHeaderTextAppearance = 10;
         /**
           <p>
           @attr description
@@ -1099,7 +1099,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:ptrHeaderTextColor
         */
-        public static int PullToRefresh_ptrHeaderTextColor = 2;
+        public static final int PullToRefresh_ptrHeaderTextColor = 2;
         /**
           <p>
           @attr description
@@ -1116,7 +1116,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:ptrListViewExtrasEnabled
         */
-        public static int PullToRefresh_ptrListViewExtrasEnabled = 14;
+        public static final int PullToRefresh_ptrListViewExtrasEnabled = 14;
         /**
           <p>
           @attr description
@@ -1140,7 +1140,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:ptrMode
         */
-        public static int PullToRefresh_ptrMode = 4;
+        public static final int PullToRefresh_ptrMode = 4;
         /**
           <p>
           @attr description
@@ -1153,7 +1153,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:ptrOverScroll
         */
-        public static int PullToRefresh_ptrOverScroll = 9;
+        public static final int PullToRefresh_ptrOverScroll = 9;
         /**
           <p>
           @attr description
@@ -1167,7 +1167,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:ptrRefreshableViewBackground
         */
-        public static int PullToRefresh_ptrRefreshableViewBackground = 0;
+        public static final int PullToRefresh_ptrRefreshableViewBackground = 0;
         /**
           <p>
           @attr description
@@ -1183,7 +1183,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:ptrRotateDrawableWhilePulling
         */
-        public static int PullToRefresh_ptrRotateDrawableWhilePulling = 15;
+        public static final int PullToRefresh_ptrRotateDrawableWhilePulling = 15;
         /**
           <p>
           @attr description
@@ -1196,7 +1196,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:ptrScrollingWhileRefreshingEnabled
         */
-        public static int PullToRefresh_ptrScrollingWhileRefreshingEnabled = 13;
+        public static final int PullToRefresh_ptrScrollingWhileRefreshingEnabled = 13;
         /**
           <p>
           @attr description
@@ -1209,7 +1209,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:ptrShowIndicator
         */
-        public static int PullToRefresh_ptrShowIndicator = 5;
+        public static final int PullToRefresh_ptrShowIndicator = 5;
         /**
           <p>
           @attr description
@@ -1221,7 +1221,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:ptrSubHeaderTextAppearance
         */
-        public static int PullToRefresh_ptrSubHeaderTextAppearance = 11;
+        public static final int PullToRefresh_ptrSubHeaderTextAppearance = 11;
         /** Attributes that can be used with a TitlePageIndicator.
            <p>Includes the following attributes:</p>
            <table>
@@ -1274,7 +1274,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           resource symbol {@link android.R.attr#background}.
           @attr name android:background
         */
-        public static int TitlePageIndicator_android_background = 2;
+        public static final int TitlePageIndicator_android_background = 2;
         /**
           <p>
           @attr description
@@ -1283,7 +1283,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           resource symbol {@link android.R.attr#textColor}.
           @attr name android:textColor
         */
-        public static int TitlePageIndicator_android_textColor = 1;
+        public static final int TitlePageIndicator_android_textColor = 1;
         /**
           <p>
           @attr description
@@ -1292,7 +1292,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           resource symbol {@link android.R.attr#textSize}.
           @attr name android:textSize
         */
-        public static int TitlePageIndicator_android_textSize = 0;
+        public static final int TitlePageIndicator_android_textSize = 0;
         /**
           <p>
           @attr description
@@ -1310,7 +1310,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:clipPadding
         */
-        public static int TitlePageIndicator_clipPadding = 4;
+        public static final int TitlePageIndicator_clipPadding = 4;
         /**
           <p>
           @attr description
@@ -1327,7 +1327,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:footerColor
         */
-        public static int TitlePageIndicator_footerColor = 5;
+        public static final int TitlePageIndicator_footerColor = 5;
         /**
           <p>
           @attr description
@@ -1345,7 +1345,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:footerIndicatorHeight
         */
-        public static int TitlePageIndicator_footerIndicatorHeight = 8;
+        public static final int TitlePageIndicator_footerIndicatorHeight = 8;
         /**
           <p>
           @attr description
@@ -1365,7 +1365,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:footerIndicatorStyle
         */
-        public static int TitlePageIndicator_footerIndicatorStyle = 7;
+        public static final int TitlePageIndicator_footerIndicatorStyle = 7;
         /**
           <p>
           @attr description
@@ -1383,7 +1383,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:footerIndicatorUnderlinePadding
         */
-        public static int TitlePageIndicator_footerIndicatorUnderlinePadding = 9;
+        public static final int TitlePageIndicator_footerIndicatorUnderlinePadding = 9;
         /**
           <p>
           @attr description
@@ -1401,7 +1401,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:footerLineHeight
         */
-        public static int TitlePageIndicator_footerLineHeight = 6;
+        public static final int TitlePageIndicator_footerLineHeight = 6;
         /**
           <p>
           @attr description
@@ -1419,7 +1419,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:footerPadding
         */
-        public static int TitlePageIndicator_footerPadding = 10;
+        public static final int TitlePageIndicator_footerPadding = 10;
         /**
           <p>
           @attr description
@@ -1438,7 +1438,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:linePosition
         */
-        public static int TitlePageIndicator_linePosition = 11;
+        public static final int TitlePageIndicator_linePosition = 11;
         /**
           <p>
           @attr description
@@ -1454,7 +1454,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:selectedBold
         */
-        public static int TitlePageIndicator_selectedBold = 12;
+        public static final int TitlePageIndicator_selectedBold = 12;
         /**
           <p>
           @attr description
@@ -1471,7 +1471,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:selectedColor
         */
-        public static int TitlePageIndicator_selectedColor = 3;
+        public static final int TitlePageIndicator_selectedColor = 3;
         /**
           <p>
           @attr description
@@ -1489,7 +1489,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:titlePadding
         */
-        public static int TitlePageIndicator_titlePadding = 13;
+        public static final int TitlePageIndicator_titlePadding = 13;
         /**
           <p>
           @attr description
@@ -1507,7 +1507,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:topPadding
         */
-        public static int TitlePageIndicator_topPadding = 14;
+        public static final int TitlePageIndicator_topPadding = 14;
         /** Attributes that can be used with a UnderlinePageIndicator.
            <p>Includes the following attributes:</p>
            <table>
@@ -1538,7 +1538,7 @@ containing a value of this type.
           resource symbol {@link android.R.attr#background}.
           @attr name android:background
         */
-        public static int UnderlinePageIndicator_android_background = 0;
+        public static final int UnderlinePageIndicator_android_background = 0;
         /**
           <p>
           @attr description
@@ -1554,7 +1554,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:fadeDelay
         */
-        public static int UnderlinePageIndicator_fadeDelay = 3;
+        public static final int UnderlinePageIndicator_fadeDelay = 3;
         /**
           <p>
           @attr description
@@ -1570,7 +1570,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:fadeLength
         */
-        public static int UnderlinePageIndicator_fadeLength = 4;
+        public static final int UnderlinePageIndicator_fadeLength = 4;
         /**
           <p>
           @attr description
@@ -1586,7 +1586,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:fades
         */
-        public static int UnderlinePageIndicator_fades = 2;
+        public static final int UnderlinePageIndicator_fades = 2;
         /**
           <p>
           @attr description
@@ -1603,7 +1603,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:selectedColor
         */
-        public static int UnderlinePageIndicator_selectedColor = 1;
+        public static final int UnderlinePageIndicator_selectedColor = 1;
         /** Attributes that can be used with a ViewPagerIndicator.
            <p>Includes the following attributes:</p>
            <table>
@@ -1639,7 +1639,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:vpiCirclePageIndicatorStyle
         */
-        public static int ViewPagerIndicator_vpiCirclePageIndicatorStyle = 0;
+        public static final int ViewPagerIndicator_vpiCirclePageIndicatorStyle = 0;
         /**
           <p>
           @attr description
@@ -1651,7 +1651,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:vpiIconPageIndicatorStyle
         */
-        public static int ViewPagerIndicator_vpiIconPageIndicatorStyle = 1;
+        public static final int ViewPagerIndicator_vpiIconPageIndicatorStyle = 1;
         /**
           <p>
           @attr description
@@ -1663,7 +1663,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:vpiLinePageIndicatorStyle
         */
-        public static int ViewPagerIndicator_vpiLinePageIndicatorStyle = 2;
+        public static final int ViewPagerIndicator_vpiLinePageIndicatorStyle = 2;
         /**
           <p>
           @attr description
@@ -1675,7 +1675,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:vpiTabPageIndicatorStyle
         */
-        public static int ViewPagerIndicator_vpiTabPageIndicatorStyle = 4;
+        public static final int ViewPagerIndicator_vpiTabPageIndicatorStyle = 4;
         /**
           <p>
           @attr description
@@ -1687,7 +1687,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:vpiTitlePageIndicatorStyle
         */
-        public static int ViewPagerIndicator_vpiTitlePageIndicatorStyle = 3;
+        public static final int ViewPagerIndicator_vpiTitlePageIndicatorStyle = 3;
         /**
           <p>
           @attr description
@@ -1699,6 +1699,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>This is a private symbol.
           @attr name com.itant.questionnaire.library:vpiUnderlinePageIndicatorStyle
         */
-        public static int ViewPagerIndicator_vpiUnderlinePageIndicatorStyle = 5;
+        public static final int ViewPagerIndicator_vpiUnderlinePageIndicatorStyle = 5;
     };
 }
